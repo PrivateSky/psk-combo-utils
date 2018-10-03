@@ -4,7 +4,7 @@ combinations of those values for each key.
 
 ## Usage
 
-Import/require the `combos` function and provide it with an object. The keys of
+equire the `psk-combo-utils` function and provide it with an object. The keys of
 the object are the keys you desire to have in your final objects. The values are
 an array, containing all possible values that given key can have. The return
 value is an array containing every version of the object with all possible
@@ -15,9 +15,8 @@ A simple example helps explain:
 ```js
 // Simple example
 // ES2015
-import combos from 'combos';
 
-// ES5
+
 const cartesianProduct = require('psk-combo-utils');
 
 // Given an object shape of
@@ -31,7 +30,7 @@ const cartesianProduct = require('psk-combo-utils');
 // array of values to all have the same type.)
 const permutations = cartesianProduct({
   greeting: ['Hello', 'Hi'],
-  name: ['Jeremy', 'Jet'],
+  name: ['Jeremy', 'Jet']
 });
 
 // 'greeting' has 2 possible values
