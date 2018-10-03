@@ -20,10 +20,5 @@ function objectProduct(obj) {
 		return e;
 	});
 }
-var test = {
-	greeting: ['Hello', 'Hi'],
-	name: ['Jeremy', 'Jet'],
-};
 
-
-console.log(objectProduct(test));
+module.exports = objectProduct;
